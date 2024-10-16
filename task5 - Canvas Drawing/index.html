@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Animation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <canvas id="myCanvas" width="400" height="400"></canvas>
+
+    <script>
+        const canvas = document.getElementById('myCanvas');
+        const context = canvas.getContext('2d');
+
+        let rectX = 50;
+        let circleX = 250;
+        let speedRect = 2;
+        let speedCircle = 1;
+
+        function draw() {
+            context.clearRect(0, 0, canvas.width, canvas.height);
+
+            // Draw the animated rectangle
+            context.fillStyle = '#00BFFF';
+            context.fillRect(rectX, 50, 150, 100);
+
+            // Draw the animated circle
+            context.beginPath();
+            context.arc(circleX, 200, 50, 0, Math.PI * 2);
+            context.fillStyle = '#FF6347';
+            context.fill();
+            context.stroke();
+
+            // Update the rectangle's and circle's positions
+            rectX += speedRect;
+            circleX += speedCircle;
+
+            // Bounce back when hitting the canvas boundary
+            if (rectX + 150 > canvas.width || rectX < 0) {
+                speedRect = -speedRect;
+            }
+            if (circleX + 50 > canvas.width || circleX - 50 < 0) {
+                speedCircle = -speedCircle;
+            }
+
+            requestAnimationFrame(draw);
+        }
+
+        draw();
+    </script>
+
+</body>
+</html>
