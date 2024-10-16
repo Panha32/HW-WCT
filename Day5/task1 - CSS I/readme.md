@@ -19,3 +19,4 @@
         <li>font-size: 18px; sets the font size of the paragraph to 18 pixels.</li>
     </ul>
 </ul>
+<hr>
