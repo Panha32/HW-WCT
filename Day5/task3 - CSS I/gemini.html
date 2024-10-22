@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Selectors Example</title>
+    <style>
+      h1 {
+        color: blue;
+      }
+
+      .paragraph {
+        font-size: 18px;
+      }
+
+      #special-paragraph {
+        background-color: yellow;
+      }
+
+      a[href^="https://"]
+      {
+        color: green;
+      }
+
+      [data-custom-attribute] {
+        border: 1px solid red;
+      }
+
+      p:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>This is a heading</h1>
+    <p class="paragraph">This is a paragraph.</p>
+    <p id="special-paragraph">This is a special paragraph.</p>
+    <a href="https://github.com/Panha32" class="link">Link to Panha32's repository in github</a>
+    <div data-custom-attribute="value">This div has a custom attribute.</div>
+  </body>
+</html>
