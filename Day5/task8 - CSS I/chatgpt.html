@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors and Backgrounds Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .solid-color {
+            background-color: #3498db; /* Solid color using hex */
+            color: white; /* Text color */
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .rgb-color {
+            background-color: rgb(255, 99, 71); /* Solid color using RGB */
+            color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .hsl-color {
+            background-color: hsl(120, 100%, 50%); /* Solid color using HSL */
+            color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .gradient {
+            background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient background */
+            color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .background-image {
+            background-image: url('https://via.placeholder.com/600x200'); 
+            background-size: cover; 
+            background-position: center;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Colors and Backgrounds in CSS</h1>
+
+    <div class="solid-color">
+        <h2>Solid Color Background (Hex)</h2>
+        <p>This background uses a hexadecimal color code.</p>
+    </div>
+
+    <div class="rgb-color">
+        <h2>Solid Color Background (RGB)</h2>
+        <p>This background uses an RGB color code.</p>
+    </div>
+
+    <div class="hsl-color">
+        <h2>Solid Color Background (HSL)</h2>
+        <p>This background uses an HSL color code.</p>
+    </div>
+
+    <div class="gradient">
+        <h2>Gradient Background</h2>
+        <p>This background is a linear gradient from one color to another.</p>
+    </div>
+
+    <div class="background-image">
+        <h2>Background Image</h2>
+        <p>This section has a background image that covers the entire area.</p>
+    </div>
+</body>
+</html>

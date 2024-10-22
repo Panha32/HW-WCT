@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Alignment Techniques</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex; /* Using flexbox for the main container */
+            justify-content: space-between; /* Distributes space between items */
+            align-items: center; /* Centers items vertically */
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #f2f2f2;
+        }
+
+        .block {
+            display: block; /* Block element */
+            background-color: #3498db;
+            color: white;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+
+        .inline {
+            display: inline; /* Inline element */
+            background-color: #e74c3c;
+            color: white;
+            padding: 10px;
+        }
+
+        .inline-block {
+            display: inline-block; /* Inline-block element */
+            background-color: #f39c12;
+            color: white;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        .flex {
+            display: flex; /* Flex container */
+            justify-content: center; /* Center align items horizontally */
+            background-color: #2ecc71;
+            padding: 20px;
+            color: white;
+        }
+
+        .flex-item {
+            padding: 10px;
+            margin: 5px;
+            background-color: #16a085; /* Flex item color */
+        }
+
+        /* Text alignment */
+        .text-center {
+            text-align: center; /* Center text */
+        }
+
+        .vertical-align {
+            height: 100px; /* Set height for demonstration */
+            display: flex;
+            align-items: center; /* Center content vertically */
+            background-color: #9b59b6;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Alignment Techniques</h1>
+
+    <div class="container">
+        <div class="block">Block Element</div>
+        <div class="inline">Inline Element</div>
+        <div class="inline">Inline Element</div>
+    </div>
+
+    <div class="text-center">
+        <h2 class="block">Centered Block Element</h2>
+        <p>This paragraph is centered using text-align.</p>
+    </div>
+
+    <div class="container">
+        <div class="inline-block">Inline-block Element 1</div>
+        <div class="inline-block">Inline-block Element 2</div>
+        <div class="inline-block">Inline-block Element 3</div>
+    </div>
+
+    <div class="flex">
+        <div class="flex-item">Flex Item 1</div>
+        <div class="flex-item">Flex Item 2</div>
+        <div class="flex-item">Flex Item 3</div>
+    </div>
+
+    <div class="vertical-align">
+        <p>Vertically Centered Content</p>
+    </div>
+</body>
+</html>

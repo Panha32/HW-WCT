@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Colors and Backgrounds Example</title>
+    <style>
+        .container {
+            width: 400px;
+            height: 300px;
+            margin: 20px auto;
+        }
+
+        .box1 {
+            background-color: #FF0000; /* Hex color */
+        }
+
+        .box2 {
+            background-color: rgb(0, 255, 0); /* RGB color */
+        }
+
+        .box3 {
+            background-color: hsl(120, 100%, 50%); /* HSL color */
+        }
+
+        .box4 {
+            background-image: url('image.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .box5 {
+            background: linear-gradient(to right, #FF0000, #FFFF00);
+        }
+    </style>
+</head>
+<body>
+    <div class="container box1"></div>
+    <div class="container box2"></div>
+    <div class="container box3"></div>
+    <div class="container box4"></div>
+    <div class="container box5"></div>
+</body>
+</html>
