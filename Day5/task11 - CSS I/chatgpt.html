@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table and Div Layout Example</title>
+  <style>
+    /* General Page Styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Div-based Layout */
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .header, .footer {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      width: 100%;
+    }
+
+    .main-content {
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+      margin: 20px 0;
+    }
+
+    .sidebar, .article {
+      padding: 15px;
+      background-color: #f0f0f0;
+    }
+
+    .sidebar {
+      width: 25%;
+    }
+
+    .article {
+      width: 70%;
+    }
+
+    /* Table-based Layout for Tabular Data */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #4CAF50;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <h1>Website Layout with Divs and Tables</h1>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="main-content">
+      <!-- Sidebar using Divs -->
+      <div class="sidebar">
+        <h2>Sidebar</h2>
+        <p>This is the sidebar content, styled using <code>&lt;div&gt;</code> for flexible layout.</p>
+      </div>
+
+      <!-- Article Section using Divs -->
+      <div class="article">
+        <h2>Main Article</h2>
+        <p>This section represents the main article area, styled with <code>&lt;div&gt;</code> and CSS for flexibility.</p>
+
+        <!-- Table to Display Data -->
+        <table>
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Temperature (°C)</th>
+              <th>Conditions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Monday</td>
+              <td>18</td>
+              <td>Sunny</td>
+            </tr>
+            <tr>
+              <td>Tuesday</td>
+              <td>21</td>
+              <td>Partly Cloudy</td>
+            </tr>
+            <tr>
+              <td>Wednesday</td>
+              <td>19</td>
+              <td>Rainy</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>Footer Area</p>
+    </div>
+  </div>
+
+</body>
+</html>

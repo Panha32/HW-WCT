@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Variables Example</title>
+    <style>
+      :root {
+        --primary-color: #007bff;
+        --secondary-color: #6c757d;
+        --font-family: Arial, sans-serif;
+      }
+
+      body {
+        font-family: var(--font-family);
+        background-color: var(--secondary-color);
+      }
+
+      h1 {
+        color: var(--primary-color);
+      }
+
+      button {
+        background-color: var(--primary-color);
+        color: white;
+        font-family: var(--font-family);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+    <button>Click Me</button>
+  </body>
+</html>

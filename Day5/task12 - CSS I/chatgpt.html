@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Flexbox Layout</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    /* Flex Container */
+    .container {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Header */
+    .header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Main Content */
+    .main {
+      display: flex;
+      flex: 1;
+      flex-wrap: wrap; /* Allow wrapping on small screens */
+      justify-content: space-between;
+      margin: 20px 0;
+    }
+
+    /* Content Sections */
+    .section {
+      background-color: #f0f0f0;
+      padding: 20px;
+      flex-basis: 30%; /* Base size of each section */
+      flex-grow: 1; /* Grow equally */
+      margin: 10px;
+      text-align: center;
+    } 
+
+    /* Footer */
+    .footer {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .main {
+        flex-direction: column; /* Stack sections vertically on smaller screens */
+        align-items: center;
+      }
+
+      .section {
+        flex-basis: 100%; /* Make sections full width */
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <h1>Responsive Flexbox Layout</h1>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+      <div class="section">Section 1</div>
+      <div class="section">Section 2</div>
+      <div class="section">Section 3</div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>Footer Area</p>
+    </div>
+  </div>
+
+</body>
+</html>
